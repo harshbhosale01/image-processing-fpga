@@ -24,7 +24,7 @@ Whereas we keep the luminance same.
 
 ### 3.**Discrete cosine transformation:**<br/>
 It deals with the fact that human eye is unable to see high frequency changes in image intensity very well. So we try to eliminate the high frequency data in this and next step.<br/>
-Firstly, here we take a block which consists of 8*8 pixels.<br/>
+Firstly, here we take a block which consists of 8*8 pixelkmkls.<br/>
 Then we subtract 128 from each pixel so our pixel value now ranges from -128 to 127.<br/>
 <img src= "Resources/DCT1.png" width="300" height="300">
 
@@ -36,3 +36,25 @@ Each pixel from our original 8*8 pixel block is identical to one of the pixel fr
 <img src= "Resources/DCT2.png" width="300" height="300">
 
 Now the pixels from our 8*8 pixel block are multiplied by their corresponding identical pixel coefficient. If you closely look at the coefficients they are such that lower frequency pixels have high coefficient whereas higher frequency pixels have lower coefficients. 
+
+### 4.**Quantization:**</br>
+So in this step we have a standard quantization table (This table might differ from encoder to encoder) So each pixels value is divided by their respective quantization table value and then we round it off to nearest integer.
+Quantization table looks like this,</br>
+<img src="https://imgs.search.brave.com/imiBBnyqg9k5sDKz85gGUijuzpGVW8F31-r2TlAgp4g/rs:fit:687:575:1/g:ce/aHR0cHM6Ly9zdGF0/aWMudHVtYmxyLmNv/bS9nbHR2eW5uL3JW/WG84eDdtYi9xdWFu/dHRhYmxlLnBuZw" width="300" height="300">
+
+This quantization table has higher values for higher frequency pixels. So with quantization we have many 0's in our 8*8 pixel block.
+
+### 5.**Huffman Encoding:**</br>
+When we list the values of pixels for final step we list the values in zigzag format.</br>
+Refer the below image,</br>
+<img src="https://imgs.search.brave.com/wiOE0OE39ntlqUh7wPGnScjXIdiRcDceemiDAjUX9aM/rs:fit:900:900:1/g:ce/aHR0cHM6Ly9pbWcy/LnBuZ2Rvd25sb2Fk/LmlkLzIwMTgwNTAx/L2Rrdy9raXNzcG5n/LXppZ3phZy1odWZm/bWFuLWNvZGluZy1k/YXRhLWNvbXByZXNz/aW9uLXppZ3phZy01/YWU4YzYyMTRjMWYy/MS4yNjEwODA2NDE1/MjUyMDQ1MTMzMTE4/LmpwZw" width="300" height="300">
+
+Instead of noting all the zero we do 0[x(number of consecutive zeros)].
+
+## Rebuilding the JPEG (Decoding):</p>
+In decoding we do the exact reverse steps as that of encoding.</br>
+1. Hoffman decoding</br>
+2. Multiply each value by same quantization table respective value.</br>
+3. Division by Inverse cosine transformation values</br>
+4. Upscaling the image(Reverse of chrominance desampling)</br>
+5. Converting back to colour sapce format.
