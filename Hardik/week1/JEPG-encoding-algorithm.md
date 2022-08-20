@@ -4,14 +4,14 @@
 JPEG (or JPG) is not really a file format but rather an image compression standard. 
 Generally a much simpler and standard version is used i.e. JFIF . JPEG is a subset of JFIF and even though we mean JFIF , .jpeg or .jpg foramt is used .
 
-##Assumptions of JPEG Compression
+## Assumptions of JPEG Compression
 
 1. We are more sensitive to the illuminocity of color, rather than the chromatric value of an image.	
 2. We are not particularly sensitive to high-frequency content in images.	
 
-##JPEG coding algorithm 
+## JPEG coding algorithm 
 
-*Stages in JPEG coding algorithm *
+*Stages in JPEG coding algorithm*
 1. COlour Transformation 
 2. Applying 2D Direct Cosine Transformation (DCT) to 8x8 block 
 3. Quantization (filtering ) Stage 
@@ -21,7 +21,7 @@ If we even break these process down then,
 ![Stages in JPEG coding algorithm](https://media.geeksforgeeks.org/wp-content/uploads/20200407203949/JPEG1.png)
 
 In short consider an image 
-![Sample image](/home/hardik/Pictures/Screenshot from 2022-08-20 21-24-06.png)
+![Sample image](/home/hardik/Pictures/Screenshot%20from%202022-08-20%2021-24-06.png)
 
 - Splitting – 
     We split our image into the blocks of 8*8 blocks. It forms 64 blocks in which each block is referred to as 1 pixel. 
