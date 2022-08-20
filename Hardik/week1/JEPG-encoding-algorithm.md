@@ -18,7 +18,16 @@ Generally a much simpler and standard version is used i.e. JFIF . JPEG is a subs
 4. Huffmann encoding .
 
 If we even break these process down then,
+
+
+
+
+
+
 ![Stages in JPEG coding algorithm](https://media.geeksforgeeks.org/wp-content/uploads/20200407203949/JPEG1.png)
+
+
+
 
 In short consider an image 
 
