@@ -1,4 +1,4 @@
-			# Image Encoding Algorithm
+# Image Encoding Algorithm
 			
 *JPEG* : JOint Photographic Experts Group 
 JPEG (or JPG) is not really a file format but rather an image compression standard. 
@@ -21,7 +21,7 @@ If we even break these process down then,
 ![Stages in JPEG coding algorithm](https://media.geeksforgeeks.org/wp-content/uploads/20200407203949/JPEG1.png)
 
 In short consider an image 
-![ Sample image  ](/home/hardik/Pictures/Screenshot from 2022-08-20 21-24-06.png)
+![Sample image](/home/hardik/Pictures/Screenshot from 2022-08-20 21-24-06.png)
 
 - Splitting – 
     We split our image into the blocks of 8*8 blocks. It forms 64 blocks in which each block is referred to as 1 pixel. 
