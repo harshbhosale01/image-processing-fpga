@@ -21,7 +21,7 @@ If we even break these process down then,
 ![Stages in JPEG coding algorithm](https://media.geeksforgeeks.org/wp-content/uploads/20200407203949/JPEG1.png)
 
 In short consider an image 
-![Sample image](Hardik/imgs/Screenshot%20from%202022-08-20%2021-24-06.png)
+![Sample image](https://github.com/hrsshhhh/image-processing-fpga/blob/master/Hardik/imgs/Screenshot%20from%202022-08-20%2021-24-06.png)
 
 - Splitting – 
     We split our image into the blocks of 8*8 blocks. It forms 64 blocks in which each block is referred to as 1 pixel. 
