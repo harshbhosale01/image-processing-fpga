@@ -17,7 +17,7 @@ Each pixel has 3 RGB values, process ofcolour space conversion takes this 3 valu
 ### 2.**Chrominance Downsampling:**<br/>
 Our eyes are bad at percieving chrominance so in this step what we do is we take 2*2 pixel block and finf the average of 4 pixels in that block for blue chrominance(Cb) red chrominance (Cr). 
 
-<img src="https://github.com/hrsshhhh/image-processing-fpga/blob/master/Week_1/Resources/Capture.PNG" width="300" height="250">
+<img src="https://github.com/hrsshhhh/image-processing-fpga/blob/master/Harsh/Week_1/Resources/Capture.PNG?raw=true" width="300" height="250">
 
 Thus in blue chrominance(Cb) red chrominance (Cr) the size information is converted to (1/4)th of the original size information.<br/>
 Whereas we keep the luminance same.
@@ -26,14 +26,14 @@ Whereas we keep the luminance same.
 It deals with the fact that human eye is unable to see high frequency changes in image intensity very well. So we try to eliminate the high frequency data in this and next step.<br/>
 Firstly, here we take a block which consists of 8*8 pixelkmkls.<br/>
 Then we subtract 128 from each pixel so our pixel value now ranges from -128 to 127.<br/>
-<img src= "https://github.com/hrsshhhh/image-processing-fpga/blob/master/Week_1/Resources/DCT1.PNG" width="300" height="300">
+<img src= "https://github.com/hrsshhhh/image-processing-fpga/blob/master/Harsh/Week_1/Resources/DCT1.PNG?raw=true" width="300" height="300">
 
 So in DCT we have a base DCT 8*8 pixel which looks like this,
 
 <img src="https://imgs.search.brave.com/0ENUHlbYwzs9t1aELBPMhmMk1VBLvN_cnJZ5lo6N_ws/rs:fit:321:323:1/g:ce/aHR0cDovL2kuc3Rh/Y2suaW1ndXIuY29t/L2pIQTUwLmpwZw" width="300" height="300">
 
 Each pixel from our original 8*8 pixel block is identical to one of the pixel from the above 64 base DCT pixels. Now this base DCT block has coefficients for each pixel. That is each pixel is assigned with a coefficient as follow,<br/>
-<img src= "https://github.com/hrsshhhh/image-processing-fpga/blob/master/Week_1/Resources/DCT2.PNG" width="300" height="300">
+<img src= "https://github.com/hrsshhhh/image-processing-fpga/blob/master/Harsh/Week_1/Resources/DCT2.PNG?raw=true" width="300" height="300">
 
 Now the pixels from our 8*8 pixel block are multiplied by their corresponding identical pixel coefficient. If you closely look at the coefficients they are such that lower frequency pixels have high coefficient whereas higher frequency pixels have lower coefficients. 
 
