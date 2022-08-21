@@ -57,13 +57,11 @@ In decoding we do the exact reverse steps as that of encoding.</br>
 2. Multiply each value by same quantization table respective value.</br>
 3. Division by Inverse cosine transformation values</br>
 4. Upscaling the image(Reverse of chrominance desampling)</br>
-<<<<<<< HEAD
 5. Converting back to colour sapce format.</br>
    
 For more understanding watch this videos:</br>
 - [Video 1](https://www.youtube.com/watch?v=Kv1Hiv3ox8I)
 - [Video 2](https://www.youtube.com/watch?v=n_uNPbdenRs)
 - [Video 3](https://www.youtube.com/watch?v=Q2aEzeMDHMA)
-=======
-5. Converting back to colour sapce format.
->>>>>>> 41a352da90074012de61faf70e1705c039c238a9
+
+
