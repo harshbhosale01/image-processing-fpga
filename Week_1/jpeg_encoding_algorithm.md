@@ -30,7 +30,7 @@ Then we subtract 128 from each pixel so our pixel value now ranges from -128 to 
 
 So in DCT we have a base DCT 8*8 pixel which looks like this,
 
-<img src="https://www.researchgate.net/profile/Sayeed-Chowdhury/publication/344485397/figure/fig3/AS:943483275730945@1601955350581/8-8-2-D-DCT-bases-on-the-left-and-PCA-bases-for-CIFAR-10-on-the-right-The-DCT-bases.ppm" width="300" height="300">
+<img src="https://imgs.search.brave.com/0ENUHlbYwzs9t1aELBPMhmMk1VBLvN_cnJZ5lo6N_ws/rs:fit:321:323:1/g:ce/aHR0cDovL2kuc3Rh/Y2suaW1ndXIuY29t/L2pIQTUwLmpwZw" width="300" height="300">
 
 Each pixel from our original 8*8 pixel block is identical to one of the pixel from the above 64 base DCT pixels. Now this base DCT block has coefficients for each pixel. That is each pixel is assigned with a coefficient as follow,<br/>
 <img src= "https://github.com/hrsshhhh/image-processing-fpga/blob/master/Week_1/Resources/DCT2.PNG" width="300" height="300">
