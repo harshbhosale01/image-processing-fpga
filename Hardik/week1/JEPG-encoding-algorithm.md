@@ -34,7 +34,7 @@ In short consider an image
 
 
 
-![Sample image](https://github.com/hrsshhhh/image-processing-fpga/blob/master/Hardik/imgs/Screenshot%20from%202022-08-20%2021-24-06.png)
+![Sample image](https://github.com/hrsshhhh/image-processing-fpga/blob/master/Hardik/imgs/Original-img.png)
 
 
 
@@ -42,24 +42,26 @@ In short consider an image
 
 - Splitting – 
     We split our image into the blocks of 8*8 blocks. It forms 64 blocks in which each block is referred to as 1 pixel.
-     
+    ![Splitted img](https://github.com/hrsshhhh/image-processing-fpga/blob/master/Hardik/imgs/After-splitting.png) 
 
      
 - Color Space Transform – 
     In this phase, we convert R, G, B to Y, Cb, Cr model. Here Y is for brightness, Cb is color blueness and Cr stands for Color redness. We transform it into chromium colors as these are less sensitive to human eyes thus can be removed. 
-
+    ![colour transformation](https://github.com/hrsshhhh/image-processing-fpga/blob/master/Hardik/imgs/Colour-conversion.png)
      
 - Apply DCT – 
     We apply Direct cosine transform on each block. The discrete cosine transform (DCT) represents an image as a sum of sinusoids of varying magnitudes and frequencies. 
-
+	![DCT]()
      
 - Quantization – 
     In the Quantization process, we quantize our data using the quantization table. 
-
+	![Quantuzation]()
+	![Quantization example]()
+	![]()
      
 -  Serialization – 
     In serialization, we perform the zig-zag scanning pattern to exploit redundancy. 
-
+	![Huffman encoding]()
      
 -  Vectoring – 
     We apply DPCM (differential pulse code modeling) on DC elements. DC elements are used to define the strength of colors. 
