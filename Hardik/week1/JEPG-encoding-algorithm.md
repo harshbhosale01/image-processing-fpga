@@ -41,7 +41,8 @@ In short consider an image
 
 
 - Splitting – 
-    We split our image into the blocks of 8*8 blocks. It forms 64 blocks in which each block is referred to as 1 pixel. 
+    We split our image into the blocks of 8*8 blocks. It forms 64 blocks in which each block is referred to as 1 pixel.
+     
 
      
 - Color Space Transform – 
@@ -67,7 +68,9 @@ In short consider an image
 -  Encoding – 
     In the last stage, we apply to encode either run-length encoding or Huffman encoding. The main aim is to convert the image into text and by applying any encoding we convert it into binary form (0, 1) to compress the data. 
 
-  
+
+
+![Example](https://followtutorials.com/2014/02/discrete-cosine-transform-and-jpeg-compression-image-processing.html)
    
 
 
