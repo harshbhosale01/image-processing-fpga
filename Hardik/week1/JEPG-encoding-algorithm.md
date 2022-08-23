@@ -43,17 +43,15 @@ In short consider an image
      
 - Apply DCT – 
     We apply Direct cosine transform on each block. The discrete cosine transform (DCT) represents an image as a sum of sinusoids of varying magnitudes and frequencies. 
-	![DCT]()
+	
      
 - Quantization – 
     In the Quantization process, we quantize our data using the quantization table. 
-	![Quantuzation]()
-	![Quantization example]()
-	![]()
+	
      
 -  Serialization – 
     In serialization, we perform the zig-zag scanning pattern to exploit redundancy. 
-	![Huffman encoding]()
+	
      
 -  Vectoring – 
     We apply DPCM (differential pulse code modeling) on DC elements. DC elements are used to define the strength of colors. 
