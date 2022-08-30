@@ -1,6 +1,6 @@
-//3 by 3 matrix multiplier. Each element of the matrix is 8 bit wide. 
+//8 by 8 matrix multiplier. Each element of the matrix is 8 bit wide. 
 //Inputs are named A and B and output is named as C. 
-//Each matrix has 9 elements each of which is 8 bit wide. So the inputs is 9*8=72 bit long.
+//Each matrix has 64 elements each of which is 8 bit wide. So the inputs is 512 bit long.
 module matrix_mult
     (   input Clock,
         input reset, //active high reset
@@ -59,8 +59,10 @@ begin
                 j = 0;
                 k = 0;
             end
-            else if(end_of_mult == 0) begin     //multiplication hasnt ended. Keep multiplying.
-                //Actual matrix multiplication starts from now on.
+            else if(end_of_mult == 0) begin
+                /*Multiplication will happen when Reset equals 0, Enable equls 1, first_cycle equals 0 
+                  and end_of_mult equals 0   
+                  Remember, we can't use For loop here because for loops used for computation are not synthesizable*/
                 temp = matA[i][k]*matB[k][j];
                 matC[i][j] = matC[i][j] + temp[7:0];    //Lower half of the product is accumulatively added to form the result.
                 if(k == 7) begin
@@ -81,7 +83,7 @@ begin
                     k = k+1;
             end
             else if(end_of_mult == 1) begin     //End of multiplication has reached
-                //convert 3 by 3 matrix into a 1-D matrix.
+                //convert 8 by 8 matrix into a 1-D matrix.
                 for(i=0;i<=7;i=i+1) begin   //run through the rows
                     for(j=0;j<=7;j=j+1) begin    //run through the columns
                         C[(i*8+j)*8+:8] = matC[i][j];
