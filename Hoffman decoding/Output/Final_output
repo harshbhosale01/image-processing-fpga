@@ -1,0 +1,24 @@
+couldn't open "transcript": permission denied
+# Reading C:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# reading modelsim.ini
+# Loading project decode9
+# Compile of decode_rtl_sim.v was successful.
+# Compile of tb_decoding.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui decode.tb_dcode -L {C:/Users/Harsh Bhosale/OneDrive/Documents/Hoffman decoding/analogic/decode}
+# vsim -gui decode.tb_dcode -L C:/Users/Harsh Bhosale/OneDrive/Documents/Hoffman decoding/analogic/decode 
+# Start time: 09:07:12 on Sep 21,2022
+# Loading decode.tb_dcode
+# Loading decode.decoding
+run -all
+#    9    3    1    4    1    0   -1    0
+#    2    8    0    1    1    0    0    0
+#   -6   -4    0   -1    0    0    0    0
+#   -2   -4    0    0    0    0    0    0
+#   -1    0    0    0    0    0    0    0
+#    0    0    0    0    0    0    0    0
+#    0    0    0    0    0    0    0    0
+#    0    0    0    0    0    0    0    0
+# ** Note: $stop    : C:/Users/Harsh Bhosale/OneDrive/Documents/Hoffman decoding/analogic/src/tb_decoding.v(32)
+#    Time: 915 ps  Iteration: 0  Instance: /tb_dcode
+# Break in Module tb_dcode at C:/Users/Harsh Bhosale/OneDrive/Documents/Hoffman decoding/analogic/src/tb_decoding.v line 32
