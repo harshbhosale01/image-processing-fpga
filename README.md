@@ -23,7 +23,7 @@
   FPGA stands for Field Programmable Gate Array. 
   
 ## Flowchart:
-  <img src = "[https://imgs.search.brave.com/TwnSmfvodO8McvuEbxGHyze_HHV83S4_TenecpDC9wg/rs:fit:917:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5P/eDhLZE9Lc2RjTzBf/dzg3S3R1RkN3SGFE/MSZwaWQ9QXBp](https://miro.medium.com/max/1400/1*JQ3JejBDau8TnNUPuzYSLw.png)" width="900" height="540">
+  <img src = "https://miro.medium.com/max/1400/1*JQ3JejBDau8TnNUPuzYSLw.png" width="900" height="540">
 
 ## Tech Stack:
   - [Verilog](https://www.chipverify.com/verilog/verilog-tutorial)
