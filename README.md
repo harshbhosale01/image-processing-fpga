@@ -1,3 +1,16 @@
-# image-processing-fpga
-- Implementing JPEG encoder algorithm with Verilog on FPGA as Phase 1.<br/>
-- Phase 2 includes the interfacing of a camera module (preferably ov2640 or ov7670) and a TFT display.
+# Image-Processing-FPGA
+## Table of contents 
+- [Aim]()
+- [About the project]()
+- [Theory]()
+- [Flowchart]()
+- [Tech Stack]()
+- [Gettong Started]()
+- [Usage]()
+- [Screenshot and demo ]()
+- [Future work]()
+- [Troubleshooting]()
+- [Contributors]()
+- [Mentors]()
+- [Acknowledgement and Resources]()
+## Aim:
