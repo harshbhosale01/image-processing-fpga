@@ -1,18 +1,18 @@
 # Image-Processing-FPGA
 ## Table of contents 
-- [Aim](#Aim:)
-- [About the Project](#About the Project:)
-- [Theory](#Theory:)
-- [Flowchart](#Flowchart:)
-- [Tech Stack](#Tech Stack:)
-- [Gettong Started](#Getting Started:)
-- [Usage](#Usage:)
-- [Screenshot and Demo](#Screenshot and Demo:)
-- [Future work](#Future work:)
-- [Troubleshooting](#Troubleshooting:)
-- [Contributors](#Contributors:)
-- [Mentors](#Mentors:)
-- [Acknowledgement and Resources](#Acknowledgement and Resources:)
+- [Aim](#aim)
+- [About the Project](#about-the-Project)
+- [Theory](#T=theory)
+- [Flowchart](#flowchart)
+- [Tech Stack](#tech-stack)
+- [Gettong Started](#getting-started)
+- [Usage](#usage)
+- [Screenshot and Demo](#screenshot-and-demo)
+- [Future work](#future-work)
+- [Troubleshooting](#troubleshooting)
+- [Contributors](#contributors)
+- [Mentors](#mentors)
+- [Acknowledgement and Resources](#acknowledgement-and-resources)
 
 ## Aim:
   To compress and decompress an image with the help of JPEG algorithm on FPGA using Tang Primer Dev Board.
