@@ -39,7 +39,7 @@
   - Clone or download the compression modules in this repo.
   - Open Tang Dynasty and generate RTL file by creating project and following [this process]().
   
-## Screenshot and Demo:
+## Results:
   - [Input image](https://github.com/harshbhosale01/image-processing-fpga/blob/master/Results/Original-img.jpeg)
   - [Output image with 70 percent compression](https://github.com/harshbhosale01/image-processing-fpga/blob/master/Results/70-compressed-img.png)
 
