@@ -18,7 +18,7 @@
   To compress and decompress an image with the help of JPEG algorithm on FPGA using Tang Primer Dev Board.
 
 ## About the Project:
-  
+  Implementing JPEG encoder algorithm with Verilog on FPGA as Phase 1. Phase 2 includes the interfacing of a camera module (preferably ov2640 or ov7670) and a TFT    display. 
 ## Theory:
   FPGA stands for Field Programmable Gate Array. 
   
@@ -38,18 +38,10 @@
   - Download and Install Modelsim.
   - Clone or download the compression modules in this repo.
   - Open Tang Dynasty and generate RTL file by creating project and following [this process]().
-
-## Usage:
-
+  
 ## Screenshot and Demo:
-
-## Future work:
-
-## Troubleshooting:
-
-## Contributors:
-
-## Mentors:
-
-## Acknowledgement and Resources:
+  - Input image
+    <img src = "https://github.com/harshbhosale01/image-processing-fpga/blob/master/Results/Original-img.jpeg">
+  - Output image with 70 percent compression
+    <img src= "https://github.com/harshbhosale01/image-processing-fpga/blob/master/Results/70-compressed-img.png">
 
