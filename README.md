@@ -5,14 +5,8 @@
 - [Theory](#T=theory)
 - [Flowchart](#flowchart)
 - [Tech Stack](#tech-stack)
-- [Gettong Started](#getting-started)
-- [Usage](#usage)
-- [Screenshot and Demo](#screenshot-and-demo)
-- [Future work](#future-work)
-- [Troubleshooting](#troubleshooting)
-- [Contributors](#contributors)
-- [Mentors](#mentors)
-- [Acknowledgement and Resources](#acknowledgement-and-resources)
+- [Getting Started](#getting-started)
+- [Results](#results)
 
 ## Aim:
   To compress and decompress an image with the help of JPEG algorithm on FPGA using Tang Primer Dev Board.
