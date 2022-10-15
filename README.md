@@ -36,4 +36,4 @@
 ## Results:
   - [Input image](https://github.com/harshbhosale01/image-processing-fpga/blob/master/Results/Original-img.jpeg)
   - [Output image with 70 percent compression](https://github.com/harshbhosale01/image-processing-fpga/blob/master/Results/70-compressed-img.png)
-
+  - [Comparison](https://media.discordapp.net/attachments/1006252829687689408/1030724592135835648/Compression-comparison.png?width=1120&height=538)
