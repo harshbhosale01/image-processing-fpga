@@ -5,7 +5,7 @@ module decoding(input Clock,
         output reg [511:0] C, //Output decoded string
         output reg done //To state the testbench that output is ready
         );
-reg signed [511:0] D;
+reg [511:0] D;
 integer i,j,count1,count2;
 reg [511:0] B;
 reg [6:0] r; 
@@ -60,8 +60,8 @@ begin
                         count1 = count1 + 1;
                     end
                 end
-                else begin
-                    if((A[count2*8 +: 7] > 112)) begin
+                else if(A[((count2+1)*8)-1] == 0) begin
+                    if((A[count2*8 +: 7] > 78)) begin
                         D[((B[count1*8 +: 8]+1)*8)-1] =1'b1; 
                         D[B[count1*8 +: 8]*8 +:7] =  (A[count2*8 +:7]);
                         count1 = count1+1;
@@ -73,6 +73,10 @@ begin
                         count1 = count1+1;
                         count2 = count2+1;
                     end
+                end
+                else begin
+                    count1 = count1+1;
+                    count2 = count2+1;
                 end
             end
     end

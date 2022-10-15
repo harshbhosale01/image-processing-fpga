@@ -3,13 +3,12 @@ unique values now there will be one single value for 4 adjacent pixels*/
 module chrominance_downsampling
        (input Clock,
         input reset, 
-        input Enable,
+        input Enable0,
         input [511:0] Cb,
         input [511:0] Cr,
         output reg [511:0] Cb_d,
         output reg [511:0] Cr_d,
-        output reg done1,
-        output reg done2);
+        output reg enable1);
         
 reg  [7:0] matCb_d [7:0][7:0];  //To save the final result
 reg  [7:0] matCr_d [7:0][7:0];
@@ -17,14 +16,18 @@ reg  [7:0] matCb [7:0][7:0];    //To save the 1D to 2D results
 reg  [7:0] matCr [7:0][7:0];
 reg  [9:0] temp1;
 reg  [9:0] temp2;
-
-integer signed i,j,m,n;
+reg done1;
+reg done2;
+integer i,j,m,n;
 reg first_cycle1; 
 reg first_cycle2; 
 reg end_of_mean1;
 reg end_of_mean2;
 
-
+always @(posedge Clock or posedge reset)
+begin
+    enable1 = (done1 && done2);
+end
 always @(posedge Clock or posedge reset) //Blue chrominance downsampling block
 begin
     if(reset == 1) begin    //Active high reset
@@ -43,7 +46,7 @@ begin
         end
     end  
     else begin
-        if(Enable == 1)     //Any action happens only when Enable is High.
+        if(Enable0 == 1)     //Any action happens only when Enable is High.
              if(first_cycle1==1)begin
                 //the matrices which are in a 1-D array are converted to 2-D matrices first.
                 for(i=0;i<=7;i=i+1) begin
@@ -109,7 +112,7 @@ begin
         end
     end  
     else begin
-        if(Enable == 1)     //Any action happens only when Enable is High.
+        if(Enable0 == 1)     //Any action happens only when Enable is High.
              if(first_cycle2==1)begin
                 //the matrices which are in a 1-D array are converted to 2-D matrices first.
                 for(m=0;m<=7;m=m+1) begin
